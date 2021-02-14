@@ -1,0 +1,84 @@
+body{
+    font-family: sans-serif;
+}
+#graphContainer{
+    width: 80%;
+    height: 400px;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin: 0 auto;
+}
+#graphContainer h2{
+    margin: 0;
+}
+#dataGraph{
+    width: 100%;
+    height: 380px;
+}
+#dataTable{
+    width: 66%;
+    display: inline-block;
+    margin-top: 20px;
+}
+#barra_lateral{
+    width: 30%;
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: top;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#sensor_container{
+    border-bottom: 1px solid #cccccc;
+    width: 90%;
+    margin: 0 auto;
+}
+button{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    padding: 5px 0;
+}
+/* radio buttons tratados como botonera */
+.radio_file{
+    background-color: #f2f2f2;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%; 
+    font-size: 14px;
+}
+.radio_file label{
+    cursor: pointer;
+}
+.radio_file input[type="radio"]{
+    display: none;
+}
+.radio_file.selected{
+    background-color: bisque;
+    border-color: #9aaba8;
+}
+
+@media screen and (max-width:600px){
+    #barra_lateral, #dataTable{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+}
